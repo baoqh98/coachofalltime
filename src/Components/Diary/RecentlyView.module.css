@@ -1,0 +1,49 @@
+.recently-view {
+  margin-top: 32px;
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titles .view-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: calc(24px * 140 / 100);
+  font-weight: 500;
+}
+
+.titles button {
+  transition: all ease 0.3s;
+}
+
+.titles .see-more {
+  padding: 8px 12px;
+  color: #1980ff;
+  background-color: transparent;
+  line-height: calc(16px * 140 / 100);
+  font-size: 16px;
+  border: none;
+  transition: all ease 0.2;
+  cursor: pointer;
+}
+
+.titles .see-more:hover {
+  color: #1463c4;
+}
+
+.titles .see-more span {
+  position: relative;
+}
+
+.titles .see-more span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 0.5px;
+  background-color: #1980ff;
+}

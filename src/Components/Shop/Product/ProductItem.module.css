@@ -1,0 +1,149 @@
+.product-item {
+  margin-bottom: 32px;
+}
+
+.product-item p,
+.product-item h3 {
+  margin: 0;
+}
+
+.product-item h3 {
+  min-height: 72px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+  transition: all ease 0.3s;
+}
+
+.product-card:hover {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.product-card .image {
+  position: relative;
+  overflow: hidden;
+  height: 120px;
+  border-radius: 8px;
+}
+
+.image img {
+  display: block;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.image span {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.image span i {
+  pointer-events: none;
+}
+
+.content {
+  margin-top: 24px;
+}
+
+.content > div:not(div:last-child) {
+  margin-bottom: 8px;
+}
+
+.content .title h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.content .body {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.content .body .type p {
+  font-weight: 400;
+}
+
+.content .body .price span {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  color: #6cce5a;
+}
+
+.content .description {
+  height: 64px;
+}
+
+.content .description p {
+  display: block; /* or inline-block */
+  color: #555;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 21px;
+  height: 100%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.actions .form {
+  display: flex;
+  align-items: center;
+}
+
+.actions .form button {
+  background-color: transparent;
+  border: 1px solid #5fc48e;
+  color: #5fc48e;
+}
+
+.actions button {
+  padding: 8px 12px;
+  border: none;
+  color: #fff;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  color: #fff;
+  background-color: #5fc48e;
+}
+
+.actions .count {
+  min-width: 24px;
+  text-align: center;
+}

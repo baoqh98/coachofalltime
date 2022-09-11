@@ -1,0 +1,115 @@
+.squad-information {
+  padding: 16px 24px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.header .heading {
+  margin: 0;
+  font-size: 24px;
+  color: #555;
+  width: 50%;
+}
+
+.header .selection {
+  position: relative;
+  width: 30%;
+  text-align: left;
+}
+
+.header .selection span {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #999;
+}
+
+.header .selection select {
+  color: #555;
+  font-weight: 500;
+}
+
+.table-wrapper {
+  height: 400px;
+  overflow: overlay;
+  position: relative;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.table-wrapper:hover::-webkit-scrollbar {
+  display: block;
+}
+
+.table {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.table thead {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.table thead::before {
+  content: '';
+  position: absolute;
+  top: 56px;
+  display: block;
+  width: 100%;
+  height: 0.5px;
+  background-color: #dadada;
+}
+
+.table thead tr {
+  color: #838383;
+}
+
+.table tbody tr {
+  color: #999;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(101, 205, 149, 0.2);
+  color: #222;
+}
+
+.table thead tr th,
+.table tbody tr td {
+  padding: 16px 8px;
+}
+
+.table tbody tr td img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50px;
+  border: 1px solid #fff;
+}
+
+.table tbody tr td:first-child {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}

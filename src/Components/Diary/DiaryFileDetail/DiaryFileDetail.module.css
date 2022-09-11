@@ -1,0 +1,353 @@
+* {
+  outline: none;
+}
+
+.file-control__nav {
+  margin-bottom: 8px;
+  display: flex;
+  align-self: center;
+  column-gap: 16px;
+  margin-bottom: 16px;
+}
+
+.file-control__nav button.file-control__nav-back {
+  padding: 8px;
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.file-control__nav button.file-control__nav-back:hover {
+  color: #65cd95;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.title h1 {
+  position: relative;
+  font-size: 24px;
+  padding: 0 0 0 4px;
+  line-height: 34px;
+  width: 80%;
+  margin: 0;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.title h1[contentEditable='true']:empty:not(:focus):before {
+  content: attr(data-text);
+  cursor: text;
+  color: #c0c0c0;
+}
+
+.general-info {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 56px;
+  transform: scaleY(1);
+  transition: transform ease 0.3s;
+}
+
+.general-info h2 {
+  margin: 0;
+}
+
+.general-info .participants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  padding: 16px 0;
+}
+
+.general-info .participants::after {
+  content: '';
+  position: relative;
+  width: 50%;
+  height: 1px;
+  background-color: #dadada;
+}
+
+.general-info .participants h4 {
+  margin: 0;
+  font-size: 12px;
+}
+
+.general-info .participants .players {
+  display: flex;
+  flex-direction: row;
+  margin-left: 16px;
+}
+
+.general-info .participants .player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-left: -16px;
+}
+
+.general-info .participants .player:last-child {
+  width: 56px;
+  height: 56px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #65cd95;
+  border: 2px solid #fff;
+}
+
+.general-info .participants img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+}
+
+.general-info .opponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  border-radius: 8px;
+  padding: 8px;
+  margin: auto;
+}
+.general-info .opponent span {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.general-info .opponent p {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #136257;
+  word-break: break-all;
+}
+
+.general-info .opponent p[contentEditable='true']:empty:not(:focus):before {
+  content: attr(data-text);
+  color: #c0c0c0;
+  text-align: center;
+  cursor: text;
+}
+
+.general-info .opponent p[contentEditable='true']:empty:focus:before {
+  content: attr(data-text);
+  color: #c0c0c0;
+  text-align: center;
+  cursor: text;
+}
+
+.general-info .box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  column-gap: 4px;
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: rgba(144, 194, 255, 0.2);
+  color: #555;
+  font-weight: 500;
+}
+
+.general-info .box .border {
+  background-color: rgba(144, 194, 255, 0.4);
+  height: 1px;
+  width: 70%;
+  justify-items: baseline;
+}
+
+.general-info .date,
+.general-info .location,
+.general-info .scoreBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 8px 0;
+}
+
+.general-info .box .action {
+  display: flex;
+  justify-content: flex-end;
+  width: 15%;
+}
+/* 
+.general-info .box .action .saveButtonIcon {
+  margin-left: auto;
+  padding: 0 8px;
+  border: none;
+  font-size: 18px;
+  color: #1980ff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.general-info .box .action .saveButtonIcon i {
+  pointer-events: none;
+} */
+
+.general-info .date .dateBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.general-info .date .dateInput {
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  color: #555;
+  font-weight: 500;
+  padding: 0px 12px;
+  width: 50%;
+  border: none;
+  outline: none;
+}
+
+input[type='date']:in-range::-webkit-datetime-edit-year-field,
+input[type='date']:in-range::-webkit-datetime-edit-month-field,
+input[type='date']:in-range::-webkit-datetime-edit-day-field,
+input[type='date']:in-range::-webkit-datetime-edit-text {
+  text-align: center;
+  color: #c0c0c0;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  text-align: right;
+  cursor: pointer;
+}
+
+.general-info .scoreBox .score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.general-info .scoreBox .score .inputScore {
+  text-align: center;
+  padding: 0;
+  border: none;
+  color: #555;
+  background-color: transparent;
+  outline: none;
+}
+
+.general-info .scoreBox .score .inputScore::placeholder {
+  color: #555;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.general-info .location {
+  text-transform: capitalize;
+}
+
+.media {
+  margin-top: 32px;
+}
+
+.media .box {
+  margin-top: 16px;
+}
+
+.media .box .images {
+  --imagesHeight: 120px;
+  background-color: #fff;
+  padding: 4px;
+  padding-bottom: 0px;
+  border-radius: 4px;
+  max-height: calc((var(--imagesHeight) * 3) + 16px);
+  overflow-y: scroll;
+}
+
+.media .box img {
+  display: block;
+  width: 100%;
+  height: var(--imagesHeight);
+  margin-bottom: 4px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.media .box .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 8px 4px;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+}
+
+.media .box .links input {
+  margin: 0;
+  background-color: transparent;
+  outline: none;
+  padding: 4px 12px;
+  font-size: 16px;
+  border: none;
+}
+
+.media .box .links input::placeholder {
+  color: #8e8e8e;
+}
+
+.media .box .links button {
+  font-size: 16px;
+  background-color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  transition: all ease 0.1s;
+  cursor: pointer;
+}
+
+.media .box .links button:hover {
+  background-color: #8be1aa;
+  color: #fff;
+}
+
+.media .box .links button:active {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+}
+
+.media .box .youtubeValidation {
+  color: #ff6854;
+  margin: 0;
+  margin-top: 8px;
+  padding: 0 8px;
+  text-align: justify;
+}
+
+.media .box .youtubeValidation span {
+  color: #ff6854;
+  font-size: 14px;
+}

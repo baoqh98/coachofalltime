@@ -1,0 +1,19 @@
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: -16px;
+  text-align: center;
+}
+
+.screen .head {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.screen .description {
+  width: 500px;
+  color: #888;
+}

@@ -1,0 +1,107 @@
+.header {
+  position: relative;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header i {
+  font-size: 28px;
+  color: #65cd95;
+  transition: all ease 0.3s;
+  padding: 8px;
+}
+
+.header i:hover {
+  color: #5ab987;
+}
+
+.header span {
+  cursor: pointer;
+}
+
+.start {
+  margin-right: auto;
+}
+
+.start p {
+  font-size: 24px;
+  line-height: calc(24px * 140 / 100);
+  margin: 0;
+}
+
+.end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.end > div {
+  margin-left: 24px;
+}
+
+.end .account {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.end .account img {
+  display: block;
+  margin: auto;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+  object-position: center;
+}
+
+.end .account .tool {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 72px;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.account .tool span {
+  font-size: 14px;
+  padding: 8px 16px;
+  color: #888;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.account .tool span:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.account .tool span:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.account .tool::before {
+  content: '';
+  position: absolute;
+  right: 26px;
+  top: -5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+}
+
+.account .tool span:hover {
+  background-color: rgba(25, 128, 255, 0.2);
+}

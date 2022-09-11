@@ -1,0 +1,17 @@
+.primary-btn {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #6bd89e;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  transition: all ease 0.3s;
+  font-weight: 700;
+}
+
+.primary-btn:hover {
+  background-color: #5fc48e;
+}

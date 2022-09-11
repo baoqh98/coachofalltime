@@ -1,0 +1,65 @@
+.SignForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.box {
+  row-gap: 24px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 16px;
+  width: 480px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.heading {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.heading h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.form .input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.form .input span.validation {
+  font-size: 12px;
+  line-height: 20px;
+  height: 20px;
+  color: #ff6854;
+}
+
+.form .input input {
+  font-size: 16px;
+}
+
+.action {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 16px;
+}

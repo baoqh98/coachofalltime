@@ -1,0 +1,19 @@
+.upload-dialog {
+  position: relative;
+  padding: 24px;
+  width: 1204px;
+  height: 720px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.titles h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.upload-dialog main,
+.upload-dialog main form,
+.upload-dialog main form > div {
+  height: 100%;
+}

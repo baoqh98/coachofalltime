@@ -1,0 +1,61 @@
+.overview {
+  padding: 32px 0;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 16px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.content .icon {
+  color: #fff;
+  padding: 16px;
+  border-radius: 50px;
+}
+
+.content .icon i {
+  font-size: 24px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .squad {
+  background-color: #ff6854;
+}
+
+.content .match {
+  background-color: #1980ff;
+}
+
+.content .expense {
+  background-color: #6cce5a;
+}
+
+.content .winRate {
+  background-color: #dbd115;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detail .title {
+  font-size: 16px;
+  color: #999;
+}
+
+.detail .number {
+  font-size: 28px;
+  color: #000;
+  font-weight: 700;
+}

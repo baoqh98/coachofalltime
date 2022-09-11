@@ -1,0 +1,44 @@
+.imageUpdate {
+  width: 100%;
+}
+
+.imageUpdate input {
+  display: none;
+}
+
+.imageUpdate .inputLabel {
+  display: block;
+  text-align: center;
+  color: #65cd95;
+  padding: 16px;
+  border-radius: 4px;
+  margin-left: 2px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  border: 1px dashed #65cd95;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.imageUpdate .inputLabel:hover {
+  background-color: rgba(101, 205, 149, 0.1);
+}
+
+.imageUpdate .status {
+  text-align: center;
+}
+
+.imageUpdate .action {
+  width: 100%;
+  display: flex;
+  column-gap: 16px;
+  padding: 8px;
+}
+
+.imageUpdate .action button {
+  width: 50%;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 8px;
+  border-radius: 8px;
+}

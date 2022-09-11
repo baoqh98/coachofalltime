@@ -1,0 +1,160 @@
+.diary-form {
+  height: 100%;
+}
+
+.diary-form > div {
+  height: 100%;
+}
+
+.diary-form input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #dadada;
+  outline: none;
+}
+
+.diary-form input:focus {
+  border: 1px solid #8be1aa;
+}
+
+.diary-form .title-input {
+  position: relative;
+  font-size: 22px;
+  line-height: 32px;
+  color: #136257;
+  font-weight: 700;
+  border: none;
+  border-bottom: 1px solid #dadada;
+  padding-left: 0;
+  border-radius: unset;
+  margin-bottom: 24px;
+}
+
+.diary-form .title-input::placeholder {
+  color: rgba(19, 98, 87, 0.4);
+}
+
+.diary-form .title-input:focus {
+  border: none;
+  border-bottom: 1px solid #8be1aa;
+}
+
+.title-input:focus::placeholder {
+  color: transparent;
+}
+
+.recap-wrapper .media-input {
+  display: flex;
+  column-gap: 16px;
+}
+
+.recap-wrapper .media-input {
+  margin-bottom: 32px;
+}
+
+.recap-wrapper .media-input label {
+  width: 50%;
+  height: 120px;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.recap-wrapper .media-input label:hover {
+  background-color: rgba(101, 205, 149, 0.1);
+}
+
+.recap-wrapper .media-input input {
+  height: 100%;
+}
+
+.media-input label:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #8be1aa;
+  border-radius: 8px;
+  border: 1px dashed #8be1aa;
+}
+
+.media-input label:first-child span {
+  font-size: 16px;
+}
+
+.media-input label:first-child span i {
+  font-size: 24px;
+}
+
+.media-input label:last-child input {
+  text-align: center;
+  font-size: 22px;
+  color: #136257;
+  border-radius: 8px;
+  border: 1px dashed #8be1aa;
+}
+
+.media-input label:last-child input::placeholder {
+  color: #8be1aa;
+}
+
+.media-input .image-input {
+  display: none;
+}
+
+.media-input .selected {
+  color: #136257;
+}
+
+.recap-writing .recap-textarea {
+  width: 100%;
+  height: 240px;
+  padding: 16px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid #dadada;
+  outline: none;
+  resize: none;
+}
+
+.recap-writing .recap-textarea:focus {
+  border: 1px solid #8be1aa;
+}
+
+.info-wrapper {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.info-wrapper .final-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.info-wrapper .final-score input {
+  width: 75%;
+}
+
+.info-wrapper .final-score span {
+  font-size: 14px;
+  width: 50%;
+}
+
+.action {
+  position: relative;
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 16px;
+}
+
+.action button {
+  padding-left: 47px;
+  padding-right: 47px;
+}

@@ -1,0 +1,18 @@
+.secondary-btn {
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #65cd95;
+  border: 1px solid transparent;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 11px 15px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.secondary-btn:hover {
+  color: #52a97b;
+  border: 1px #52a97b solid;
+}

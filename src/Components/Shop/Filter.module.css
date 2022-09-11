@@ -1,0 +1,50 @@
+.filter-box ul {
+}
+
+.tags-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 0;
+  border-radius: 50px;
+  overflow: overlay;
+  white-space: nowrap;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.tags-list::-webkit-scrollbar {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  height: 2px;
+  transition: all ease 0.3s;
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.tags-list:hover::-webkit-scrollbar {
+  display: block;
+}
+
+.tag-item {
+  padding: 8px 14px;
+  margin-right: 16px;
+  border-radius: 50px;
+  color: #5fc48e;
+  background-color: rgba(95, 196, 142, 0.2);
+  cursor: pointer;
+}
+
+.tag-content {
+  font-size: 16px;
+}
+
+.active {
+  background-color: #6bd89e;
+  color: #fff;
+}

@@ -1,0 +1,38 @@
+.danger-btn {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ff6854;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  transition: all ease 0.3s;
+  font-weight: 700;
+}
+
+.danger-btn:hover {
+  background-color: #db6446;
+}
+
+.danger-btn.icon {
+  color: #ff6854;
+  background-color: transparent;
+
+  font-size: 24px;
+  line-height: 24px;
+  padding: 12px;
+}
+
+.danger-btn.icon:hover {
+  background-color: transparent;
+}
+
+i {
+  transition: all ease 0.3s;
+}
+
+.danger-btn.icon i:hover {
+  color: #db6446;
+}

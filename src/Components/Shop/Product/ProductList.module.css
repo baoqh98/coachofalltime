@@ -1,0 +1,11 @@
+.product-wrapper {
+  margin: 24px 0;
+}
+
+.error-notification {
+  position: relative;
+  text-align: center;
+  color: #ff6854;
+  margin: 72px auto;
+  font-size: 32px;
+}
